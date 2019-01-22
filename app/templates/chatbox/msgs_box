@@ -1,0 +1,3 @@
+{% for message in messages %}
+    {% include "chatbox/msgs_box" %}
+{% endfor %}

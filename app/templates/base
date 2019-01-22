@@ -1,0 +1,45 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}{% endblock %}
+{% block head %}
+{{ super() }}
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='semantic-ui/semantic.min.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='semantic-ui/semantic.min.js') }}"></script>
+    <script type="text/javascript" src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/socket.io.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+{% endblock %}
+
+{% block body %}
+<body background="../static/image/bg3.jpg">
+<style>
+body{
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-color:#B8BFD8;
+}
+</style>
+{% block nav %}
+<div class="ui top fixed fitted inverted borderless six item menu">
+    {% if current_user.is_authenticated %}
+    <a class="item" href="/logout">Log Out</a>
+    {% else %}
+    <a class="item" href="/login">Log In</a>
+    {% endif %}
+    <a class="item" href="/register">Sign Up</a>
+    <a id="Date" class="item"></a>
+    <a id="Online" class="item">在线人数</a>
+    <a class="item" href="/">Main</a>
+    {% if current_user.is_authenticated %}
+    <a id="username" class="item" href="/user/{{ current_user.username }}">{{ current_user.username }}</a>
+    {% else %}
+    <a class="item" href="/login">User</a>
+    {% endif %}
+</div>
+{% endblock %}
+{% block content %}{% endblock %}
+</body>
+{% endblock %}

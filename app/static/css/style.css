@@ -1,0 +1,104 @@
+html,body{
+    width:100%;
+    height:100%
+}
+.container{text.align:center}.dropdown{text.align:right}
+.card {
+    width: 320px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1), 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+.card .card-header {
+    height: 220px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: url(../static/image/bg1.jpg);
+    background-size: cover;
+}
+.card .card-body {
+    position: relative;
+}
+.card .card-body img {
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.6);
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    margin-left: -50px;
+    box-shadow: 0 6px 6px -4px rgba(0, 0, 0, 0.2);
+}
+.card .card-body .name {
+    font-size: 32px;
+    text-align: center;
+    padding-top: 60px;
+    margin-bottom: 10px;
+}
+.card .card-body .description {
+    padding: 0 25px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.card .card-body .location {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.chatbox{
+    height: 90%;
+    width: 100%;
+    margin: 0;
+}
+.messages{
+    height: 100%;
+    margin: 0;
+    overflow-y: scroll;
+    padding: 5% 20px 10px 20px;
+}
+#emit{
+    width: 80%;
+    margin: 0;
+    padding: 2px 0 10px 15px;
+}
+.ui.alert{
+    height: 18%;
+    margin: 0;
+    padding: 20px 0 0 0;
+}
+/*form_setting*/
+.same{
+    height: 30px;
+    position: fixed;
+    bottom: 5%;
+}
+#emit_data{
+    width: 60%;
+    font-size: 15px;
+    left: 3%;
+}
+#btn1{
+    width: 14%;
+    font-size: 0;
+    left: 63%;
+    background-image: url(/static/image/Sending.png);
+    background-color: white;
+    background-size: 35px 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#color_changer{
+    width: 5%;
+    float: right;
+    border-radius: 130px;
+    background-image: url(/static/image/paintpad.png);
+    background-color: white;
+    background-size: 21px 21px;
+    background-repeat: no-repeat;
+    background-position: center;
+}

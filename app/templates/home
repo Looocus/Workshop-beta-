@@ -1,0 +1,54 @@
+{% extends "base" %}
+{% block title %}User_page{% endblock %}
+{% block head %}
+{{ super() }}
+{{ moment.include_moment() }}
+{% endblock %}
+{% block nav %}
+{{ super() }}
+{% endblock %}
+
+{% block content %}
+<div class="chatbox">
+    <div id="log" class="messages">
+        {% for message in messages %}
+            <br>
+            <div class="msg-box">
+                <div class="msg">
+                    <span class="nickname" style="color : {{ message.message_color }}"><strong>{{ message.author.username }}</strong></span>
+                    <small class="timestamp">{{ moment(message.timestamp).format('lll') }}:</small>
+                    <span class="message-body">{{ message.message_txt|safe }}</span>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+<div class="input-area">
+    <div class="ten wide column">
+        <div class="field fluid message-box">
+            <form id="emit" class="login ui large form" method="post" action='#' accept-charset="UTF-8">
+                <textarea rows="1" cols="15" class="same text" type="text" name="emit_data" id="emit_data"></textarea><input class="same btn" type="submit" id="btn1">
+                <!--
+                <input class="same colchanger" id="color_changer">
+                -->
+            </form>
+			<div class="container">
+				<div class="ball active" id="ballid">
+					<button class="btnall" onclick="changered()"><i class="material-icons first">R</i></button>
+					<button class="btnall"><i class="material-icons second">B</i></button>
+					<button class="btnall"><i class="material-icons third">G</i></button>
+                    <button class="btnall"><i class="material-icons fourth">P</i></button>
+                    <button class="btnall"><i class="material-icons fifth">O</i></button>
+					<!--?xml version="1.0" encoding="utf-8"?-->
+					<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+					<polygon fill="#FFFFFF" points="30,14.5 15.5,14.5 15.5,0 14.5,0 14.5,14.5 0,14.5 0,15.5 14.5,15.5 14.5,30 15.5,30 15.5,15.5 
+						30,15.5 "></polygon>
+					</svg>
+				</div>	
+			</div>
+			<link rel="stylesheet" href="/static/css/colmenu.css">
+			<script src="/static/js/colmenu.js"></script>
+        </div>
+    </div>
+</div>
+{% endblock %}

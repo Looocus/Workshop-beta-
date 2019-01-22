@@ -1,0 +1,6 @@
+<h1> Hello! {% if name %}{{ name }}{% else %}Stranger{% endif %}!</h1>
+{% if not known %}
+<p>Pleased to meet you!</p>
+{% else %}
+<p>Happy to meet again!</p>
+{% endif %}
