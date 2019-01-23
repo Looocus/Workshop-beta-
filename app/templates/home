@@ -34,11 +34,11 @@
             </form>
 			<div class="container">
 				<div class="ball active" id="ballid">
-					<button class="btnall" onclick="changered()"><i class="material-icons first">R</i></button>
-					<button class="btnall"><i class="material-icons second">B</i></button>
-					<button class="btnall"><i class="material-icons third">G</i></button>
-                    <button class="btnall"><i class="material-icons fourth">P</i></button>
-                    <button class="btnall"><i class="material-icons fifth">O</i></button>
+					<button class="btnall" onclick="changered()"><i class="material-icons first"></i></button>
+					<button class="btnall" onclick="changeblue()"><i class="material-icons second"></i></button>
+					<button class="btnall" onclick="changegreen()"><i class="material-icons third"></i></button>
+                    <button class="btnall" onclick="changepink()"><i class="material-icons fourth"></i></button>
+                    <button class="btnall" onclick="changeorange()"><i class="material-icons fifth"></i></button>
 					<!--?xml version="1.0" encoding="utf-8"?-->
 					<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
 					<polygon fill="#FFFFFF" points="30,14.5 15.5,14.5 15.5,0 14.5,0 14.5,14.5 0,14.5 0,15.5 14.5,15.5 14.5,30 15.5,30 15.5,15.5 

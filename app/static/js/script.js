@@ -51,6 +51,10 @@ $(document).ready(function() {
         window.usernum = usernum;
         window.userall = userall;
         window.msg_box = msg_box;
+		var message_color = document.getElementById("ballid").style.background;
+		var font_color ="'" + "color" + ":" + message_color + ";" + "'";
+		//console.log(msg_box.match("\"nick\""));
+		msg_box = msg_box.replace(/\"nick\"/,font_color);
         $('#log').append("<br>" + msg_box);
         //$('#log').append('<br>'+ '<br>' + name + "(" + usernum + "/" + userall + ")" + ":" + $('<p/>').text(decodeURIComponent(message)).html());
         var scroll_h = document.getElementById('log').scrollHeight;

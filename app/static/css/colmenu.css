@@ -77,26 +77,41 @@
   cursor: pointer;
 }
 .ball.active .first {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
   top: 20px;
   opacity: 1;
 }
 .ball.active .second {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
   top: 40px;
   left: 40px;
   opacity: 1;
 }
 .ball.active .third {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
   left: 20px;
   opacity: 1;
 }
 .ball.active .fourth {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
   left: 40px;
-  top: 100px;
+  top: 90px;
   opacity: 1;
 }
 .ball.active .fifth {
-  left: 90px;
-  top: 160px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  left: 85px;
+  top: 130px;
   opacity: 1;
 }
 .ball svg {
@@ -122,31 +137,31 @@
   opacity: 0;
 }
 .ball i.first {
-  color: #ff7f7f;
+  background: #ff7f7f;
   top: -40px;
   left: 0;
   right: 0;
   text-align: center;
 }
 .ball i.second {
-  color: #8484ff;
+  background: #8484ff;
   left: -25px;
   top: -25px;
 }
 .ball i.third {
-  color: #89ff89;
+  background: #89ff89;
   left: -40px;
   top: 0;
   bottom: 0;
 }
 .ball i.fourth {
-  color: #ff7fc7;
+  background: #ff7fc7;
   left: -25px;
   top: -50;
   bottom: 0;
 }
 .ball i.fifth {
-  color: #ffc78a;
+  background: #ffc78a;
   left: -25px;
   top: -50;
   bottom: 0;
@@ -163,7 +178,6 @@
 .ball.expand > * {
   display: none;
 }
-
 @keyframes startup {
   0% {
     transform: translate(0, 300px);

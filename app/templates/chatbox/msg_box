@@ -1,11 +1,7 @@
 {{ moment.include_moment() }}
 <div class="msg-box">
-	<script>
-		var msg_color = document.getElementById("ballid").style.background;
-		document.getElementById("nick").style.color = msg_color;
-	</script>
     <div class="msg">
-        <span class="nickname" id="nick"><strong>{{ message.author.username }}</strong></span>
+        <span class="nickname" style="nick"><strong>{{ message.author.username }}</strong></span>
         <small class="timestamp">{{ moment(message.timestamp).format('lll') }}:</small>
         <span class="message-body">{{ message.message_txt|safe }}</span>
     </div>
