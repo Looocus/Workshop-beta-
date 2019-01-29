@@ -9,6 +9,9 @@
 {% endblock %}
 
 {% block content %}
+<style>body{background: rgba(220,220,220,10);}</style>
+<script src="/static/js/simplex-noise.min.js"></script>
+<script src="/static/js/noisedesk.js"></script>
 <div class="chatbox">
     <div id="log" class="messages">
         {% for message in messages %}

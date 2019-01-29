@@ -51,6 +51,7 @@ html,body{
     text-align: center;
 }
 .chatbox{
+	position: relative;
     height: 90%;
     width: 100%;
     margin: 0;
@@ -101,4 +102,8 @@ html,body{
     background-size: 21px 21px;
     background-repeat: no-repeat;
     background-position: center;
+}
+.noisedesk{
+	position: absolute;
+	z-index: -2;
 }

@@ -48,6 +48,11 @@
     </div>
     {% endfor %}
 </div>
+<div>
+	<style>canvas {margin: 0 auto; display: block;};</style>
+	<script src="/static/js/loading.js"></script>
+</div>
+<!--
 <div class="ui three column grid"
     <div class="column">
         <div id="mycarousel" class="carousel slide" data-ride="carousel" data-interval="2000" style="height:603px;width:339px">
@@ -64,4 +69,5 @@
         </div>
     </div>
 </div>
+-->
 {% endblock %}

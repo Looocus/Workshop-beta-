@@ -19,7 +19,7 @@
 body{
     background-size:cover;
     background-repeat:no-repeat;
-    background-color:#B8BFD8;
+    background-color:black;
 }
 </style>
 {% block nav %}
