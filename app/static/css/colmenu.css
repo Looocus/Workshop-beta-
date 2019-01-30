@@ -4,7 +4,7 @@
   position: fixed;
   margin: auto;
   right: 0;
-  bottom: 3%;
+  bottom: 8%;
   overflow: hidden;
   z-index: 1;
 }
@@ -177,6 +177,9 @@
 }
 .ball.expand > * {
   display: none;
+}
+:focus{
+  outline: 0;
 }
 @keyframes startup {
   0% {

@@ -35,7 +35,7 @@ $.Particle.prototype.draw = function( i ) {
   $.ctx.stroke();
   
   $.ctx.beginPath();
-  $.ctx.arc( this.x, this.y, Math.max( 0.001, this.life * this.radius ), 0, $.TWO_PI );
+  $.ctx.arc( this.x, this.y, Math.max( 0.001, this.life * this.radius ), 0, $.TWO_PI, false );
   $.ctx.fill();
   
   var size = Math.random() * 1.25;
