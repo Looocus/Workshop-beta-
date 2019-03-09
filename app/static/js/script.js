@@ -1,4 +1,4 @@
-window.onload=function(){
+$(document).ready(function() {
     setInterval(function(){
     var date=new Date();
     var h=date.getHours(); //获取小时
@@ -21,8 +21,7 @@ window.onload=function(){
       s = '0' + s
     }
     d.innerHTML=a+' '+h+':'+m+':'+s;  },1000)
-};
-$(document).ready(function() {
+    //socketio部分
     namespace = '/test_conn';
     var socket = io.connect(location.protocol + '//' + document.domain + ':' + location.port + namespace);
     //滚动条刷新到底

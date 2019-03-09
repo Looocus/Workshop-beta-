@@ -30,7 +30,7 @@
     <div class="ten wide column">
         <div class="field fluid message-box">
             <form id="emit" class="login ui large form" method="post" action='#' accept-charset="UTF-8">
-                <textarea rows="1" cols="15" class="same text" type="text" name="emit_data" id="emit_data"></textarea><input class="same btn" type="submit" id="btn1">
+                <textarea rows="1" cols="15" class="same text" type="text" name="emit_data" id="emit_data" style="resize:none;line-height: 1;" placeholder="area for 64 characters"></textarea><input class="same btn" type="submit" id="btn1">
                 <!--
                 <input class="same colchanger" id="color_changer">
                 -->
